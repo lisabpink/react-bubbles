@@ -41,12 +41,20 @@ axiosWithAuth()
   
   return (
     <>
-      <h1>Welcome to the Bubble App!</h1>
+       <div className='main'>
+
+
+<h1 className='bounce-in-left'>Bubble App</h1>
+<div className= 'login-form'>
+      
       <form onSubmit={handleSubmit}>
-        <input type="text" value={user} onChange={useHandler} placeholder="username" />
-        <input type="password" value={password} onChange={passwordHandler} placeholder="password" />
-        <button>Login</button>
+      <input  className= 'login' type="text" value={user} onChange={useHandler} placeholder="username" />
+        <input className= 'login' type="password" value={password} onChange={passwordHandler} placeholder="password" />
+        <button className= 'login-btn' >Login</button>
     </form>
+    
+    </div>
+    </div>
     </>
   );
 };
